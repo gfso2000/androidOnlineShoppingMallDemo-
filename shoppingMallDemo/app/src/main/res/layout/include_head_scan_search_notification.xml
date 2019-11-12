@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head_scan_search_notification_layout_entire"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/yinying">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/head_scan_search_notification_layout_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/scanImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/saoyisao" />
+
+            <TextView
+                android:id="@+id/scanbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dp"
+                android:text="扫一扫"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/head_view_switch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_scan_search_notification_layout_scan"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:id="@+id/head_msg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/head_img_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/xiaoxi" />
+
+                <TextView
+                    android:id="@+id/notificationbtn"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head_img_notification"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="消息"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/head_badge_notification"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/head_msg_layout"
+                android:background="@drawable/badge_item_count"
+                android:text="99+"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_scan_search_notification_layout_scan"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/head_view_switch_layout"
+            android:layout_toRightOf="@id/head_scan_search_notification_layout_scan"
+            android:background="@mipmap/sousuokuang">
+
+
+            <ImageView
+                android:id="@+id/head_img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/sousuo" />
+
+            <Button
+                android:id="@+id/head_scan_search_notification_btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/head_img_search"
+                android:background="@null"
+                android:text="阿斯顿马丁2016豪华限量版"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

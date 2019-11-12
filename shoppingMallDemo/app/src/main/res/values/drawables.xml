@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="list_row_normal">#eeeeee</item>
+    <item type="drawable" name="list_row_pressed">#ffffff</item>
+    <item type="drawable" name="bn">#ffe1e1e3</item>
+    <item type="drawable" name="bl">#ffce2525</item>
+    <item type="drawable" name="bk">#fff23030</item>
+</resources>

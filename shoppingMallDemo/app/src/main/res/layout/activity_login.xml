@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="用户登录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/line_max_vertical"/>
+    <LinearLayout
+        android:id="@+id/email_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.gfso.client.oauthclientapplication.fragment.widget.MyEditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="邮箱"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:enabled="true"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/icon_telphone_32"/>
+        <View style="@style/line_vertical"/>
+
+        <com.gfso.client.oauthclientapplication.fragment.widget.MyEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:enabled="true"
+            android:hint="密码"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:drawableLeft="@drawable/icon_lock"
+            android:textSize="14sp" />
+        <View
+            style="@style/line_max_vertical"
+            ></View>
+
+        <Button
+            android:id="@+id/email_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/red"
+            android:text="邮箱登录"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sms_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <com.gfso.client.oauthclientapplication.fragment.widget.MyEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="手机号码"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:enabled="true"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/icon_telphone_32"/>
+        <View style="@style/line_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white"
+            >
+
+            <com.gfso.client.oauthclientapplication.fragment.widget.MyEditText
+                android:id="@+id/sms_code"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/get_sms_code"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_lock"
+                android:enabled="true"
+                android:hint="请输入验证码"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="number"
+                android:textSize="14sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:id="@+id/get_sms_code"
+                android:text="点击重新发送"
+                android:layout_alignParentRight="true"
+                android:background="@color/green"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        <View style="@style/line_max_vertical"></View>
+
+        <Button
+            android:id="@+id/sms_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/red"
+            android:text="手机短信登录"
+            android:stateListAnimator="@null"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View style="@style/line_max_vertical"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/email_login"
+            android:textColor="@color/red"
+            android:clickable="true"
+            android:text="邮箱登录"/>
+        <TextView
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sms_login"
+            android:clickable="true"
+            android:textColor="@color/red"
+            android:text="手机短信登录"/>
+
+    </RelativeLayout>
+</LinearLayout>

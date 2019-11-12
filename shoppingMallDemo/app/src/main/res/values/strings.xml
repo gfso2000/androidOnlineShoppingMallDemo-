@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShoppingMallDemo</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">Category</string>
+    <string name="title_shopping">Shopping</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_me">Me</string>
+    <string name="title_activity_category">CategoryActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

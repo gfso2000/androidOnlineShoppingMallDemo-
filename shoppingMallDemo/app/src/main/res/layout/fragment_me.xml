@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_view"
+        android:background="@color/red">
+        <!--下面两个控件为头像框和用户名-->
+        <ImageView
+            android:id="@+id/tb_user_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/default_head"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tb_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_user_photo"
+            android:layout_centerHorizontal="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="10dp"
+            android:text="login"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_max_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/my_list"
+        android:text="  我的订单"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_list_o"
+        />
+    <View
+        style="@style/line_vertical"
+        ></View>
+
+    <TextView
+        android:id="@+id/my_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_favorite"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="  我的收藏" />
+
+    <View
+        style="@style/line_vertical"
+        ></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:text="  收货地址"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_location"
+        android:id="@+id/my_address"/>
+
+    <View style="@style/line_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:text="  选择城市"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_location"
+        android:id="@+id/my_city"/>
+
+    <View
+        style="@style/line_max_vertical"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:id="@+id/loginOut"
+        android:background="@color/red"
+        android:visibility="gone"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
