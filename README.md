@@ -1,4 +1,4 @@
-# androidOnlineShoppingMallDemo
+# 安卓 高仿京东 在线购物
 ## Screenshots
 <p align="center">
 <img src="https://github.com/gfso2000/androidOnlineShoppingMallDemo/blob/master/Screenshots/page1.jpg" align="left" width="300" height="480" ><br/>
